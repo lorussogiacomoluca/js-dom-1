@@ -12,7 +12,7 @@ function toggleLamp(){
 }
 
 //3. addEventListener
-btn.addEventListener('click', toggleLamp())
+btn.addEventListener('click', toggleLamp)
 
 //4. Toggle Button
 console.log(btn);
