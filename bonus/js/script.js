@@ -1,6 +1,7 @@
 //1. Selezionare elementi di interesse: lampadina e bottone
 const lamp = document.querySelector('img');
 const btn = document.querySelector('.btn')
+const main = document.querySelector('main')
 
 //2. Dichairazione funzione 
 function toggleLamp(){
@@ -22,10 +23,12 @@ function toggleBtn(){
         btn.textContent = 'Spegni'
         btn.classList.remove('btn-primary');
         btn.classList.add('btn-danger');
+        main.classList.remove('bg-black')
     }else{
         btn.textContent = 'Accendi';
         btn.classList.remove('btn-danger');
         btn.classList.add('btn-primary');
+        main.classList.add('bg-black')
     }
 }
 
