@@ -2,8 +2,17 @@
 const lamp = document.querySelector('img');
 const btn = document.querySelector('.btn')
 
-//2. addEventListener
+//2. Dichairazione funzione 
+function toggleLamp(){
+    if (lamp.src.includes('yellow')){
+        lamp.src = lamp.src.replace('yellow','white')
+    }else{
+        lamp.src = lamp.src.replace('white','yellow')
+    }
+}
 
-btn.addEventListener('click', function(){
-    console.log((!lamp.src.includes('yellow')) ? lamp.src = lamp.src.replace('white','yellow') : lamp.src = lamp.src.replace('yellow','white'));
-})
+//3. addEventListener
+btn.addEventListener('click', toggleLamp())
+
+//4. Toggle Button
+console.log(btn);

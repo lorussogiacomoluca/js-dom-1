@@ -5,5 +5,5 @@ const btn = document.querySelector('.btn')
 //2. addEventListener
 
 btn.addEventListener('click', function(){
-    console.log((!lamp.src.includes('yellow')) ? lamp.src = lamp.src.replace('white','yellow') : lamp.src = lamp.src.replace('yellow','white'));
+    ((!lamp.src.includes('yellow')) ? lamp.src = lamp.src.replace('white','yellow') : lamp.src = lamp.src.replace('yellow','white'));
 })
